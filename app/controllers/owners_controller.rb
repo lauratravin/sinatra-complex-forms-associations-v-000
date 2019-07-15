@@ -35,7 +35,7 @@ class OwnersController < ApplicationController
 
   patch '/owners/:id' do
 
-    # binding.pry
+#    binding.pry
     if !params[:owner].keys.include?("pet_ids")  # Use case: when existing pets needed to be remove and add a new one.
 
     params[:owner]["pet_ids"] = []

@@ -11,7 +11,7 @@ class PetsController < ApplicationController
   end
 
   post '/pets' do
-#  binding.pry
+  binding.pry
     @pet = Pet.create(params[:pet])
 #supposing 1 pet only 1 owner.
 
